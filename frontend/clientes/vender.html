@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="Es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="../CSS/tablas.css">
+    <link rel="stylesheet" href="../CSS/ventana.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+    
+    <header>
+
+        <div class="icon_menu">
+        <i class="fas fa-bars" id="btn_open" ></i>
+
+        </div>
+    </header>
+
+
+    <div class="menu__side" id="menu_side">
+        <div class="name__page">
+            <i class="fa-solid fa-s"></i>
+            <h1>SuperC</h1>
+        </div>
+
+        
+        <div class="options__menu">
+            <ul class="tabs">
+                <li><a href="inicioBienvenida.html" class="selected">
+                <div class="option">
+                    <i class="fas fa-home" title="Bienvenido"></i>
+                    <h4>Bienvenido</h4>
+
+                </div>
+            </a></li>
+
+
+            <li><a href="comprar.html">
+                <div class="option">
+                    <i class="fa-solid fa-cart-shopping" id="btn_ini"></i>
+                    <h4>Comprar productos</h4>
+                    
+                </div>
+            </a></li>
+
+            <li><a href="vender.html">
+                <div class="option">
+                    <i class="fa-solid fa-info"></i>
+                    <h4>Vender productos</h4>
+                    
+                </div>
+            </a></li>
+
+
+            <li><a href="../vistasIniciales/inicio.html">
+                <div class="option">
+                    <i class="fa-sharp fa-solid fa-right-from-bracket"></i>
+                    <h4>Salir</h4>
+                    
+                </div>
+            </a></li>
+
+
+        </ul>
+
+
+
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+
+    <main>
+
+        <div class="contenedor">
+
+            <article id="tab1">
+                <h1>VENTA DE PRODUCTOS</h1>
+            <h2>En esta sección se podrá ver los productos, en el botón vender se <br> desplegará una ventana para escoger el producto que desees vender.</h2>
+                <table class="content-table">
+                    <tr clase="rose">
+                        <td class="Princ">ID</td>
+                        <td class="Princ">Nombre</td>
+                        <td class="Princ">Categoria</td>
+                        <td class="Princ">Precio</td>
+                        <td class="Princ">Unidad</td>
+                        </tr>
+        
+                        <tbody id="tbody"></tbody>
+        
+                            
+                        </table>
+        
+                        <button id="btn-abrir-popup" class="btn-abrir-popup">Vender</button>     
+
+            </article>
+        
+        
+            <div class="overlay" id="overlay">
+                <div class="popup" id="popup">
+                    <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                    <h3>Vender producto</h3>
+                    <form mid="form" onsubmit="vender(event)">
+                        <div class="contenedor-inputs">
+                            <P class="parrafo">Selecciona un producto para vender</P>
+                            <select name='idVenta' class="seleccion" id='select'>
+                            </select>
+                            <input type="text" placeholder="Cantidad" name="Cantidad">        
+                        </div>
+                        <input type="submit" class="btn-submit" value="vender">
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <script src="../js/popup.js"></script>
+
+    </main>
+        <script src="C:\Users\57311\Documents\GitHub\CanastaComplete\frontend\js\compraVenta.js"></script>
+</body>
+</html>

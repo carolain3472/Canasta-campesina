@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="C:\Users\57311\Documents\GitHub\CanastaComplete\frontend\CSS\registro.css">
+</head>
+
+<body>
+  <div class="signupFrm">
+    <form class="form" onsubmit="getDataForm(event)">
+      <h1 class="title">Registrate</h1>
+
+      <div class="inputContainer">
+        <input type="number" class="input" name="cedula" placeholder="Ej: 1014564798">
+        <label for="" class="label">Cédula</label>
+      </div>
+
+      <div class="inputContainer">
+        <input type="text" class="input" name="usuario" placeholder="Ej: Gabri214">
+        <label for="" class="label">Usuario</label>
+      </div>
+
+      <div class="inputContainer">
+        <input type="password" class="input" name="contrasena" placeholder="Constrasena">
+        <label for="" class="label">Contraseña</label>
+      </div>
+
+      <div class="inputContainer">
+        <input type="text" class="input" name="nombre" placeholder="Ej: Gabriel">
+        <label for="" class="label">Nombre</label>
+      </div>
+
+      <div class="inputContainer">
+        <input type="text" class="input" name="apellido" placeholder="Ej: Gonzales">
+        <label for="" class="label">Apellido</label>
+      </div>
+
+      <div class="inputContainer">
+        <input type="text" class="input" name="email" placeholder="Ej: gago@gmail.com">
+        <label for="" class="label">Email</label>
+      </div>
+
+      <div class="inputContainer">
+        <input type="text" class="input" name="telefono" placeholder="Ej: 3145874520 ">
+        <label for="" class="label">Telefono</label>
+      </div>
+
+
+
+      <div class="inputContainer">
+
+        <select class="seleccionar" name="rol" id="rol" class="form-control">
+          <option value="Cliente">Cliente</option>
+          <option value="Vendedor">Vendedor</option>
+        </select>
+
+        <label for="" class="label">Rol</label>
+      </div>
+
+
+      <div id="cont-btn-crear">
+        <button id="boton-crear-user" class="submitBtn" type="submit">
+          Registrar
+        </button>
+      </div>
+    </form>
+  </div>
+  <script src="C:\Users\57311\Documents\GitHub\CanastaComplete\frontend\js\registroCliente.js"></script>
+</body>
+
+</html>

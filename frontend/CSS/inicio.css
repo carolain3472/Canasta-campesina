@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(../Imagenes/iniciosesion.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: cursive;
+    height: 100vh;
+    }
+        
+    .Login-box{
+    width: 350px;
+    height: 420px;
+    background: #fefcf7;
+    border-color: black;
+    top: 53%;
+    left: 74%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    }
+        
+    .Login-box .avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+    }
+        
+    .Login-box h1{
+    margin:0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    }
+        
+    .Login-box label{
+    margin:0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+    }
+        
+    .Login-box input{
+    width:100%;
+    margin-bottom: 20px;
+    font-weight: bold;
+    display: block;
+    }
+        
+    .Login-box input[type="text"],.Login-box input[type="contraseña"]{
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background: transparent;
+    outline: none;
+    height: 40 px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    }
+        
+    .Login-box input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 50 px;
+    background: #ffb011;
+    font-size: 16px;
+    border-radius: 20%;
+    }
+        
+    .Login-box a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(255, 226, 59);
+    }
+        
+    .Login-box a:hover{
+    color: #ff8800;
+    }
